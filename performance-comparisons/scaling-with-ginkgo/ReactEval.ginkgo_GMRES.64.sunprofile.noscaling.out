@@ -1,0 +1,421 @@
+Initializing HIP...
+HIP initialized.
+Initializing SUNDIALS with 1 threads...
+SUNDIALS initialized.
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+AMReX (22.12-21-g2a8c71b8bf42) initialized
+ODE solver: ReactorCvode
+Type of reactor: h (PeleLM)
+Fuel: CH4, Oxy: O2
+Creating ReactorBase instance: ReactorCvode
+Number of species in mech is 35
+  Using a Ginkgo batched GMRES linear solver with analytical Jacobian
+Initializing CVODE:
+  Using LDS reductions
+Integrating 4194304 cells for: 1e-05 seconds with 1 substeps 
+Using user-defined typical values for the absolute tolerances of the ode solver.
+Set the typical values for PelePhysics ODE integration:
+NC12H26 : 2.60930515e-10
+H : 2.497699961e-09
+O : 1.55974666e-08
+OH : 6.52952975e-08
+HO2 : 2.047750538e-07
+H2 : 8.074737062e-08
+H2O : 1.208521506e-06
+H2O2 : 2.903492347e-09
+O2 : 4.477368314e-05
+CH3 : 1.047535694e-06
+CH4 : 1.122171621e-05
+CH2O : 6.670332503e-07
+CO : 4.831131292e-07
+CO2 : 4.842634744e-08
+C2H2 : 8.675129173e-09
+C2H4 : 2.522642639e-07
+C2H6 : 1.811206266e-08
+CH2CHO : 6.788374995e-10
+aC3H5 : 1.169394584e-09
+C3H6 : 1.318410816e-10
+C2H3CHO : 1e-10
+C4H7 : 1e-10
+C4H81 : 1.492187367e-09
+C5H9 : 1e-10
+C5H10 : 1e-10
+C6H12 : 1e-10
+C7H14 : 1e-10
+C8H16 : 1e-10
+C9H18 : 1e-10
+PXC9H19 : 3.492130067e-10
+C10H20 : 1e-10
+C12H24 : 1e-10
+C12H25O2 : 1e-10
+OC12H23OOH : 1e-10
+N2 : 0.0001372037486
+Temp : 2259.516367
+ 
+ STARTING THE ADVANCE 
+  [0] integrating 262144 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 47
+  nErrtf       = 0
+  nRHSeval     = 69
+  nnLinIt      = 66
+  nConvfail    = 15
+  nLinsetups   = 35
+  nJeval       = 16
+  nLinIt       = 44291
+  nLinConvfail = 15
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 262144 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 47
+  nErrtf       = 0
+  nRHSeval     = 69
+  nnLinIt      = 66
+  nConvfail    = 15
+  nLinsetups   = 35
+  nJeval       = 16
+  nLinIt       = 44291
+  nLinConvfail = 15
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 262144 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 81
+  nErrtf       = 0
+  nRHSeval     = 106
+  nnLinIt      = 103
+  nConvfail    = 10
+  nLinsetups   = 24
+  nJeval       = 11
+  nLinIt       = 60178
+  nLinConvfail = 10
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 262144 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 81
+  nErrtf       = 0
+  nRHSeval     = 106
+  nnLinIt      = 103
+  nConvfail    = 10
+  nLinsetups   = 24
+  nJeval       = 11
+  nLinIt       = 60178
+  nLinConvfail = 10
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 262144 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 47
+  nErrtf       = 0
+  nRHSeval     = 69
+  nnLinIt      = 66
+  nConvfail    = 15
+  nLinsetups   = 35
+  nJeval       = 16
+  nLinIt       = 44291
+  nLinConvfail = 15
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 262144 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 47
+  nErrtf       = 0
+  nRHSeval     = 69
+  nnLinIt      = 66
+  nConvfail    = 15
+  nLinsetups   = 35
+  nJeval       = 16
+  nLinIt       = 44291
+  nLinConvfail = 15
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 262144 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 81
+  nErrtf       = 0
+  nRHSeval     = 106
+  nnLinIt      = 103
+  nConvfail    = 10
+  nLinsetups   = 24
+  nJeval       = 11
+  nLinIt       = 60178
+  nLinConvfail = 10
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 262144 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 81
+  nErrtf       = 0
+  nRHSeval     = 106
+  nnLinIt      = 103
+  nConvfail    = 10
+  nLinsetups   = 24
+  nJeval       = 11
+  nLinIt       = 60178
+  nLinConvfail = 10
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 262144 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 47
+  nErrtf       = 0
+  nRHSeval     = 69
+  nnLinIt      = 66
+  nConvfail    = 15
+  nLinsetups   = 35
+  nJeval       = 16
+  nLinIt       = 44291
+  nLinConvfail = 15
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 262144 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 47
+  nErrtf       = 0
+  nRHSeval     = 69
+  nnLinIt      = 66
+  nConvfail    = 15
+  nLinsetups   = 35
+  nJeval       = 16
+  nLinIt       = 44291
+  nLinConvfail = 15
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 262144 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 81
+  nErrtf       = 0
+  nRHSeval     = 106
+  nnLinIt      = 103
+  nConvfail    = 10
+  nLinsetups   = 24
+  nJeval       = 11
+  nLinIt       = 60178
+  nLinConvfail = 10
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 262144 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 81
+  nErrtf       = 0
+  nRHSeval     = 106
+  nnLinIt      = 103
+  nConvfail    = 10
+  nLinsetups   = 24
+  nJeval       = 11
+  nLinIt       = 60178
+  nLinConvfail = 10
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 262144 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 47
+  nErrtf       = 0
+  nRHSeval     = 69
+  nnLinIt      = 66
+  nConvfail    = 15
+  nLinsetups   = 35
+  nJeval       = 16
+  nLinIt       = 44291
+  nLinConvfail = 15
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 262144 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 47
+  nErrtf       = 0
+  nRHSeval     = 69
+  nnLinIt      = 66
+  nConvfail    = 15
+  nLinsetups   = 35
+  nJeval       = 16
+  nLinIt       = 44291
+  nLinConvfail = 15
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 262144 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 81
+  nErrtf       = 0
+  nRHSeval     = 106
+  nnLinIt      = 103
+  nConvfail    = 10
+  nLinsetups   = 24
+  nJeval       = 11
+  nLinIt       = 60178
+  nLinConvfail = 10
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 262144 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 81
+  nErrtf       = 0
+  nRHSeval     = 106
+  nnLinIt      = 103
+  nConvfail    = 10
+  nLinsetups   = 24
+  nJeval       = 11
+  nLinIt       = 60178
+  nLinConvfail = 10
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+   >> Level 0 advance: 295.5760643
+ode.typ_vals= 1e-10 6.116601769e-09 2.864886797e-08 1.290791686e-07 2.060683772e-07 1.721440694e-07 2.747007543e-06 2.658873672e-09 4.476018034e-05 1.160601897e-06 1.121480086e-05 7.967123957e-07 1.811649486e-06 1.53961569e-07 8.21176733e-08 4.95951003e-07 1.7076097e-08 2.957611142e-09 1.067343291e-08 5.692714192e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 0.0001371697768 2337.395021 
+ 
+ >> React::main() 297.0446722
+
+
+
+TinyProfiler total time across processes [min...avg...max]: 297 ... 297 ... 297
+
+-------------------------------------------------------------------------------------------
+Name                                        NCalls  Excl. Min  Excl. Avg  Excl. Max   Max %
+-------------------------------------------------------------------------------------------
+Pele::ReactorCvode::react():CVode               16      232.2      232.2      232.2  78.16%
+Pele::ReactorCvode::cJac()                     216      44.58      44.58      44.58  15.01%
+Pele::ReactorCvode::cF_RHS()                  1400      18.51      18.51      18.51   6.23%
+VisMF::Write(FabArray)                           2      1.401      1.401      1.401   0.47%
+Pele::ReactorCvode::react()                     16     0.3036     0.3036     0.3036   0.10%
+Pele::ReactorCvode::init()                       1    0.04609    0.04609    0.04609   0.02%
+WriteMultiLevelPlotfile()                        2    0.01213    0.01213    0.01213   0.00%
+main::initialize_data()                          1   0.005025   0.005025   0.005025   0.00%
+MultiFab::max()                                 36   0.003354   0.003354   0.003354   0.00%
+main::main()                                     1  0.0006495  0.0006495  0.0006495   0.00%
+Advance_Level0                                   1  0.0001722  0.0001722  0.0001722   0.00%
+Pele::flatten()                                 16  0.0001417  0.0001417  0.0001417   0.00%
+FabArray::setVal()                               1  0.0001123  0.0001123  0.0001123   0.00%
+Pele::unflatten()                               16   6.67e-05   6.67e-05   6.67e-05   0.00%
+React                                           16  4.993e-05  4.993e-05  4.993e-05   0.00%
+main::geometry_setup                             1  4.614e-05  4.614e-05  4.614e-05   0.00%
+PlotFile                                         2  3.321e-05  3.321e-05  3.321e-05   0.00%
+main::reactor_info()                             1  1.312e-05  1.312e-05  1.312e-05   0.00%
+DistributionMapping::SFCProcessorMapDoIt()       1  4.549e-06  4.549e-06  4.549e-06   0.00%
+DistributionMapping::LeastUsedCPUs()             1  3.747e-06  3.747e-06  3.747e-06   0.00%
+DistributionMapping::Distribute()                1  1.814e-06  1.814e-06  1.814e-06   0.00%
+-------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------
+Name                                        NCalls  Incl. Min  Incl. Avg  Incl. Max   Max %
+-------------------------------------------------------------------------------------------
+main::main()                                     1        297        297        297 100.00%
+Advance_Level0                                   1      295.6      295.6      295.6  99.51%
+React                                           16      295.6      295.6      295.6  99.51%
+Pele::ReactorCvode::react()                     16      295.6      295.6      295.6  99.51%
+Pele::ReactorCvode::react():CVode               16      295.3      295.3      295.3  99.40%
+Pele::ReactorCvode::cJac()                     216      44.58      44.58      44.58  15.01%
+Pele::ReactorCvode::cF_RHS()                  1400      18.51      18.51      18.51   6.23%
+PlotFile                                         2      1.413      1.413      1.413   0.48%
+WriteMultiLevelPlotfile()                        2      1.413      1.413      1.413   0.48%
+VisMF::Write(FabArray)                           2      1.401      1.401      1.401   0.47%
+main::reactor_info()                             1     0.0461     0.0461     0.0461   0.02%
+Pele::ReactorCvode::init()                       1    0.04609    0.04609    0.04609   0.02%
+main::initialize_data()                          1   0.005137   0.005137   0.005137   0.00%
+MultiFab::max()                                 36   0.003354   0.003354   0.003354   0.00%
+Pele::flatten()                                 16  0.0001417  0.0001417  0.0001417   0.00%
+FabArray::setVal()                               1  0.0001123  0.0001123  0.0001123   0.00%
+Pele::unflatten()                               16   6.67e-05   6.67e-05   6.67e-05   0.00%
+main::geometry_setup                             1  5.625e-05  5.625e-05  5.625e-05   0.00%
+DistributionMapping::SFCProcessorMapDoIt()       1  1.011e-05  1.011e-05  1.011e-05   0.00%
+DistributionMapping::LeastUsedCPUs()             1  3.747e-06  3.747e-06  3.747e-06   0.00%
+DistributionMapping::Distribute()                1  1.814e-06  1.814e-06  1.814e-06   0.00%
+-------------------------------------------------------------------------------------------
+
+Unused ParmParse Variables:
+  [TOP]::ode.analytical_jacobian(nvals = 1)  :: [0]
+  [TOP]::initFile(nvals = 1)  :: [/path/]
+
+
+================================================================================================================
+SUNDIALS GIT VERSION: v6.5.0-3-g025eafc1ce5a-dirty
+SUNDIALS PROFILER: SUNContext Default
+Results:                                	 % time (inclusive) 	 max/rank 	 average/rank 	 count 
+================================================================================================================
+From profiler epoch                     	 100.00% 	         297.045182s 	 297.045182s 	 2
+CVode                                   	  99.40% 	         295.271985s 	 295.271985s 	 16
+SUNNonlinSolSolve                       	  98.54% 	         292.702780s 	 292.702780s 	 1104
+SUNLinSolSolve                          	  72.65% 	         215.818133s 	 215.818133s 	 1232
+solver apply                            	  72.12% 	         214.234437s 	 214.234437s 	 1232
+SUNMatScaleAddI                         	   3.52% 	         10.454626s 	 10.454626s 	 472
+N_VWrmsNorm                             	   1.17% 	         3.464272s 	 3.464272s 	 5496
+SUNMatCopy                              	   0.75% 	         2.229874s 	 2.229874s 	 472
+Wrap vector(s) for solve                	   0.26% 	         0.777406s 	 0.777406s 	 1232
+check num iters                         	   0.21% 	         0.631054s 	 0.631054s 	 1232
+SUNMemoryHelper_CopyAsync               	   0.08% 	         0.245509s 	 0.245509s 	 11072
+check residual norm                     	   0.05% 	         0.149991s 	 0.149991s 	 1232
+SUNMatClone                             	   0.03% 	         0.089157s 	 0.089157s 	 16
+N_VLinearSum                            	   0.01% 	         0.037418s 	 0.037418s 	 16056
+N_VMaxNorm                              	   0.01% 	         0.022615s 	 0.022615s 	 16
+N_VScale                                	   0.01% 	         0.019798s 	 0.019798s 	 4048
+N_VConst                                	   0.00% 	         0.009863s 	 0.009863s 	 3784
+N_VScaleAddMulti                        	   0.00% 	         0.007542s 	 0.007542s 	 1072
+CVodeInit                               	   0.00% 	         0.005804s 	 0.005804s 	 16
+SUNMemoryHelper_Dealloc                 	   0.00% 	         0.004101s 	 0.004101s 	 1040
+N_VMin                                  	   0.00% 	         0.004086s 	 0.004086s 	 16
+N_VClone                                	   0.00% 	         0.003866s 	 0.003866s 	 272
+SUNMemoryHelper_Alloc                   	   0.00% 	         0.003853s 	 0.003853s 	 1040
+N_VAbs                                  	   0.00% 	         0.003336s 	 0.003336s 	 1072
+N_VInv                                  	   0.00% 	         0.003027s 	 0.003027s 	 1056
+SUNLinSolSetup                          	   0.00% 	         0.002734s 	 0.002734s 	 472
+N_VScaleVectorArray                     	   0.00% 	         0.001932s 	 0.001932s 	 344
+generate solver                         	   0.00% 	         0.001843s 	 0.001843s 	 472
+add logger                              	   0.00% 	         0.000460s 	 0.000460s 	 1232
+build solver factory                    	   0.00% 	         0.000250s 	 0.000250s 	 472
+CVodeGetDky                             	   0.00% 	         0.000173s 	 0.000173s 	 16
+N_VLinearCombination                    	   0.00% 	         0.000163s 	 0.000163s 	 16
+set tolerance                           	   0.00% 	         0.000160s 	 0.000160s 	 1232
+N_VDiv                                  	   0.00% 	         0.000059s 	 0.000059s 	 16
+SUNNonlinSolInitialize                  	   0.00% 	         0.000005s 	 0.000005s 	 16
+SUNLinSolInitialize                     	   0.00% 	         0.000002s 	 0.000002s 	 16
+Est. profiler overhead                  	   0.00% 	         0.015024s 	 -- 		 -- 
+

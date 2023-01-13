@@ -1,0 +1,2214 @@
+Initializing HIP...
+HIP initialized.
+Initializing SUNDIALS with 1 threads...
+SUNDIALS initialized.
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+AMReX (22.12-21-g2a8c71b8bf42) initialized
+ODE solver: ReactorCvode
+Type of reactor: h (PeleLM)
+Fuel: CH4, Oxy: O2
+Creating ReactorBase instance: ReactorCvode
+Number of species in mech is 35
+  Using a Ginkgo batched GMRES linear solver with analytical Jacobian
+Initializing CVODE:
+  Using LDS reductions
+Integrating 4194304 cells for: 1e-05 seconds with 1 substeps 
+Using user-defined typical values for the absolute tolerances of the ode solver.
+Set the typical values for PelePhysics ODE integration:
+NC12H26 : 2.60930515e-10
+H : 2.497699961e-09
+O : 1.55974666e-08
+OH : 6.52952975e-08
+HO2 : 2.047750538e-07
+H2 : 8.074737062e-08
+H2O : 1.208521506e-06
+H2O2 : 2.903492347e-09
+O2 : 4.477368314e-05
+CH3 : 1.047535694e-06
+CH4 : 1.122171621e-05
+CH2O : 6.670332503e-07
+CO : 4.831131292e-07
+CO2 : 4.842634744e-08
+C2H2 : 8.675129173e-09
+C2H4 : 2.522642639e-07
+C2H6 : 1.811206266e-08
+CH2CHO : 6.788374995e-10
+aC3H5 : 1.169394584e-09
+C3H6 : 1.318410816e-10
+C2H3CHO : 1e-10
+C4H7 : 1e-10
+C4H81 : 1.492187367e-09
+C5H9 : 1e-10
+C5H10 : 1e-10
+C6H12 : 1e-10
+C7H14 : 1e-10
+C8H16 : 1e-10
+C9H18 : 1e-10
+PXC9H19 : 3.492130067e-10
+C10H20 : 1e-10
+C12H24 : 1e-10
+C12H25O2 : 1e-10
+OC12H23OOH : 1e-10
+N2 : 0.0001372037486
+Temp : 2259.516367
+ 
+ STARTING THE ADVANCE 
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 31
+  nErrtf       = 1
+  nRHSeval     = 41
+  nnLinIt      = 38
+  nConvfail    = 0
+  nLinsetups   = 11
+  nJeval       = 1
+  nLinIt       = 2756
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 40
+  nErrtf       = 1
+  nRHSeval     = 51
+  nnLinIt      = 48
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 4737
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 53
+  nErrtf       = 1
+  nRHSeval     = 66
+  nnLinIt      = 63
+  nConvfail    = 0
+  nLinsetups   = 13
+  nJeval       = 1
+  nLinIt       = 9254
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+  [0] integrating 32768 cells 
+ Setting cvode tolerances with TypVals rtol = 1e-06 atolfact = 1e-05 in PelePhysics 
+
+Final Statistics:
+  nSteps       = 88
+  nErrtf       = 4
+  nRHSeval     = 116
+  nnLinIt      = 113
+  nConvfail    = 1
+  nLinsetups   = 16
+  nJeval       = 3
+  nLinIt       = 36330
+  nLinConvfail = 0
+  nLinRHSeval  = 0
+  nPreceval    = 0
+  nPrecsolve   = 0
+   >> Level 0 advance: 105.2285505
+ode.typ_vals= 1e-10 6.117713618e-09 2.865309225e-08 1.290978071e-07 2.060624467e-07 1.721685572e-07 2.747442548e-06 2.658729179e-09 4.476018206e-05 1.160643338e-06 1.121480234e-05 7.967019951e-07 1.81203565e-06 1.540025016e-07 8.215764571e-08 4.959784926e-07 1.707573294e-08 2.958030602e-09 1.0675848e-08 5.693330687e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 0.0001371697768 2337.416592 
+ 
+ >> React::main() 106.0990729
+
+
+
+TinyProfiler total time across processes [min...avg...max]: 106.1 ... 106.1 ... 106.1
+
+-------------------------------------------------------------------------------------------
+Name                                        NCalls  Excl. Min  Excl. Avg  Excl. Max   Max %
+-------------------------------------------------------------------------------------------
+Pele::ReactorCvode::react():CVode              128      74.75      74.75      74.75  70.45%
+Pele::ReactorCvode::cF_RHS()                  8768      23.12      23.12      23.12  21.79%
+Pele::ReactorCvode::cJac()                     192      6.877      6.877      6.877   6.48%
+VisMF::Write(FabArray)                           2     0.8053     0.8053     0.8053   0.76%
+Pele::ReactorCvode::react()                    128     0.4824     0.4824     0.4824   0.45%
+Pele::ReactorCvode::init()                       1    0.04747    0.04747    0.04747   0.04%
+WriteMultiLevelPlotfile()                        2   0.007942   0.007942   0.007942   0.01%
+main::initialize_data()                          1   0.005746   0.005746   0.005746   0.01%
+MultiFab::max()                                 36   0.003284   0.003284   0.003284   0.00%
+Pele::flatten()                                128  0.0009809  0.0009809  0.0009809   0.00%
+Advance_Level0                                   1  0.0009514  0.0009514  0.0009514   0.00%
+main::main()                                     1  0.0006055  0.0006055  0.0006055   0.00%
+Pele::unflatten()                              128  0.0003564  0.0003564  0.0003564   0.00%
+React                                          128  0.0002667  0.0002667  0.0002667   0.00%
+FabArray::setVal()                               1  0.0001018  0.0001018  0.0001018   0.00%
+main::geometry_setup                             1  4.643e-05  4.643e-05  4.643e-05   0.00%
+PlotFile                                         2  3.055e-05  3.055e-05  3.055e-05   0.00%
+main::reactor_info()                             1  2.229e-05  2.229e-05  2.229e-05   0.00%
+DistributionMapping::SFCProcessorMapDoIt()       1  1.008e-05  1.008e-05  1.008e-05   0.00%
+DistributionMapping::LeastUsedCPUs()             1  2.515e-06  2.515e-06  2.515e-06   0.00%
+DistributionMapping::Distribute()                1  2.074e-06  2.074e-06  2.074e-06   0.00%
+-------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------
+Name                                        NCalls  Incl. Min  Incl. Avg  Incl. Max   Max %
+-------------------------------------------------------------------------------------------
+main::main()                                     1      106.1      106.1      106.1 100.00%
+Advance_Level0                                   1      105.2      105.2      105.2  99.18%
+React                                          128      105.2      105.2      105.2  99.18%
+Pele::ReactorCvode::react()                    128      105.2      105.2      105.2  99.18%
+Pele::ReactorCvode::react():CVode              128      104.7      104.7      104.7  98.72%
+Pele::ReactorCvode::cF_RHS()                  8768      23.12      23.12      23.12  21.79%
+Pele::ReactorCvode::cJac()                     192      6.877      6.877      6.877   6.48%
+PlotFile                                         2     0.8132     0.8132     0.8132   0.77%
+WriteMultiLevelPlotfile()                        2     0.8132     0.8132     0.8132   0.77%
+VisMF::Write(FabArray)                           2     0.8053     0.8053     0.8053   0.76%
+main::reactor_info()                             1    0.04749    0.04749    0.04749   0.04%
+Pele::ReactorCvode::init()                       1    0.04747    0.04747    0.04747   0.04%
+main::initialize_data()                          1   0.005848   0.005848   0.005848   0.01%
+MultiFab::max()                                 36   0.003284   0.003284   0.003284   0.00%
+Pele::flatten()                                128  0.0009809  0.0009809  0.0009809   0.00%
+Pele::unflatten()                              128  0.0003564  0.0003564  0.0003564   0.00%
+FabArray::setVal()                               1  0.0001018  0.0001018  0.0001018   0.00%
+main::geometry_setup                             1   6.11e-05   6.11e-05   6.11e-05   0.00%
+DistributionMapping::SFCProcessorMapDoIt()       1  1.467e-05  1.467e-05  1.467e-05   0.00%
+DistributionMapping::LeastUsedCPUs()             1  2.515e-06  2.515e-06  2.515e-06   0.00%
+DistributionMapping::Distribute()                1  2.074e-06  2.074e-06  2.074e-06   0.00%
+-------------------------------------------------------------------------------------------
+
+Unused ParmParse Variables:
+  [TOP]::ode.analytical_jacobian(nvals = 1)  :: [0]
+  [TOP]::initFile(nvals = 1)  :: [/path/]
+
+
+================================================================================================================
+SUNDIALS GIT VERSION: v6.5.0-3-g025eafc1ce5a-dirty
+SUNDIALS PROFILER: SUNContext Default
+Results:                                	 % time (inclusive) 	 max/rank 	 average/rank 	 count 
+================================================================================================================
+From profiler epoch                     	 100.00% 	         106.099578s 	 106.099578s 	 2
+CVode                                   	  98.72% 	         104.743432s 	 104.743432s 	 128
+SUNNonlinSolSolve                       	  95.27% 	         101.079458s 	 101.079458s 	 7008
+SUNLinSolSolve                          	  58.66% 	         62.238222s 	 62.238222s 	 7392
+solver apply                            	  57.52% 	         61.030086s 	 61.030086s 	 7392
+N_VWrmsNorm                             	   4.70% 	         4.988104s 	 4.988104s 	 29920
+SUNMatScaleAddI                         	   2.72% 	         2.887080s 	 2.887080s 	 1696
+SUNLinSolSetup                          	   2.14% 	         2.273115s 	 2.273115s 	 1696
+generate solver                         	   2.14% 	         2.271519s 	 2.271519s 	 1696
+SUNMatCopy                              	   1.55% 	         1.645715s 	 1.645715s 	 1696
+SUNMemoryHelper_CopyAsync               	   0.90% 	         0.957470s 	 0.957470s 	 60480
+Wrap vector(s) for solve                	   0.57% 	         0.600313s 	 0.600313s 	 7392
+check num iters                         	   0.40% 	         0.421255s 	 0.421255s 	 7392
+N_VLinearSum                            	   0.18% 	         0.186083s 	 0.186083s 	 89760
+SUNMatClone                             	   0.17% 	         0.179430s 	 0.179430s 	 128
+N_VScale                                	   0.12% 	         0.131169s 	 0.131169s 	 26656
+check residual norm                     	   0.07% 	         0.078784s 	 0.078784s 	 7392
+N_VMaxNorm                              	   0.04% 	         0.039809s 	 0.039809s 	 128
+N_VScaleAddMulti                        	   0.04% 	         0.038676s 	 0.038676s 	 7136
+CVodeInit                               	   0.03% 	         0.033840s 	 0.033840s 	 128
+N_VClone                                	   0.03% 	         0.030743s 	 0.030743s 	 2432
+SUNMemoryHelper_Alloc                   	   0.03% 	         0.029170s 	 0.029170s 	 8352
+N_VConst                                	   0.03% 	         0.028864s 	 0.028864s 	 15424
+SUNLinSolSetScalingVectors              	   0.03% 	         0.026979s 	 0.026979s 	 7392
+N_VMin                                  	   0.02% 	         0.017389s 	 0.017389s 	 128
+N_VInv                                  	   0.01% 	         0.015790s 	 0.015790s 	 7040
+N_VDiv                                  	   0.01% 	         0.015761s 	 0.015761s 	 7520
+N_VAbs                                  	   0.01% 	         0.015731s 	 0.015731s 	 7168
+SUNMemoryHelper_Dealloc                 	   0.01% 	         0.009361s 	 0.009361s 	 8352
+N_VScaleVectorArray                     	   0.01% 	         0.006126s 	 0.006126s 	 1632
+add logger                              	   0.00% 	         0.001894s 	 0.001894s 	 7392
+CVodeGetDky                             	   0.00% 	         0.000903s 	 0.000903s 	 128
+set tolerance                           	   0.00% 	         0.000887s 	 0.000887s 	 7392
+N_VLinearCombination                    	   0.00% 	         0.000853s 	 0.000853s 	 128
+build solver factory                    	   0.00% 	         0.000518s 	 0.000518s 	 1696
+SUNLinSolInitialize                     	   0.00% 	         0.000021s 	 0.000021s 	 128
+SUNNonlinSolInitialize                  	   0.00% 	         0.000020s 	 0.000020s 	 128
+Est. profiler overhead                  	   0.00% 	         0.068746s 	 -- 		 -- 
+
