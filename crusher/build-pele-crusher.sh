@@ -113,9 +113,10 @@ fi
 # ---- SUNDIALS install
 sundials_source=sundials
 if [[ ! -d $sundials_source ]]; then
-  git clone ssh://git@github.com/LLNL/sundials.git $sundials_source
+  # git clone ssh://git@github.com/LLNL/sundials.git $sundials_source
+  git clone https://github.com/LLNL/sundials.git $sundials_source
   cd sundials
-  git checkout feature/ginkgo-batch-interface
+  git checkout feature/ginkgo-batched
   cd -
 fi
 sundials_install=$SUNDIALS_DIR
@@ -181,6 +182,7 @@ if [[ "$CASE" == "pelec" ]]; then
           USE_MPI=TRUE \
           TINY_PROFILE=TRUE \
           PELE_USE_MAGMA=${magma_enable} \
+          PELE_COMPILE_AJACOBIAN=TRUE \
           MAGMA_DIR=${magma_install} \
           PELE_USE_GINKGO=${ginkgo_enable} \
           GINKGO_DIR=${ginkgo_install} \
@@ -199,6 +201,7 @@ if [[ "$CASE" == "pelec" ]]; then
         USE_MPI=TRUE \
         TINY_PROFILE=TRUE \
         PELE_USE_MAGMA=${magma_enable} \
+        PELE_COMPILE_AJACOBIAN=TRUE \
         MAGMA_DIR=${magma_install} \
         PELE_USE_GINKGO=${ginkgo_enable} \
         GINKGO_DIR=${ginkgo_install} \
@@ -210,8 +213,8 @@ elif [[ "$CASE" == "pelelmex" ]]; then
   # ---- PelePhysics and AMReX install
   amrex_dir=${PWD}/PeleLMeX/Submodules/amrex
   amrex_hydro_dir=${PWD}/PeleLMeX/Submodules/AMReX-Hydro
-  pelephysics_dir=${PWD}/PelePhysics
-  # pelephysics_dir=${PWD}/PeleLMeX/Submodules/PelePhysics
+  # pelephysics_dir=${PWD}/PelePhysics
+  pelephysics_dir=${PWD}/PeleLMeX/Submodules/PelePhysics
   cd PeleLMeX/Exec/Cases/NormalJet_OpenDomain
   # cd PeleLMeX/Exec/RegTests/FlameSheet
   if [[ ! -z ${FRESH+x} ]]; then
@@ -225,6 +228,7 @@ elif [[ "$CASE" == "pelelmex" ]]; then
           USE_MPI=TRUE \
           TINY_PROFILE=TRUE \
           PELE_USE_MAGMA=${magma_enable} \
+          PELE_COMPILE_AJACOBIAN=TRUE \
           MAGMA_DIR=${magma_install} \
           PELE_USE_GINKGO=${ginkgo_enable} \
           GINKGO_DIR=${ginkgo_install} \
@@ -243,6 +247,7 @@ elif [[ "$CASE" == "pelelmex" ]]; then
         USE_MPI=TRUE \
         TINY_PROFILE=TRUE \
         PELE_USE_MAGMA=${magma_enable} \
+        PELE_COMPILE_AJACOBIAN=TRUE \
         MAGMA_DIR=${magma_install} \
         PELE_USE_GINKGO=${ginkgo_enable} \
         GINKGO_DIR=${ginkgo_install} \
@@ -253,8 +258,8 @@ elif [[ "$CASE" == "reacteval" ]]; then
   echo '!!!!!!!!!!!!!! Building ReactEval '
   amrex_dir=${PWD}/PeleC/Submodules/AMReX
   amrex_hydro_dir=${PWD}/PeleC/Submodules/AMReX-Hydro
-  pelephysics_dir=${PWD}/PelePhysics
-  # pelephysics_dir=${PWD}/PeleC/Submodules/PelePhysics
+  # pelephysics_dir=${PWD}/PelePhysics
+  pelephysics_dir=${PWD}/PeleC/Submodules/PelePhysics
   cd PelePhysics/Testing/Exec/ReactEval/
   if [[ ! -z ${FRESH+x} ]]; then
     make \
