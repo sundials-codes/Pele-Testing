@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOLVER="${SOLVER:=GMRES}"
+SOLVER="${SOLVER:=GMRES}" # GMRES, magma_direct, ginkgo_GMRES, or ginkgo_BICGSTAB
 MAX_GRID_SIZE="${MAX_GRID_SIZE:=16}"
 INPUT_FROM_FILE="${INPUT_FROM_FILE:=0}"
 INIT_FILE="${INIT_FILE:=/path/}"
