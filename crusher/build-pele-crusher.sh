@@ -258,8 +258,8 @@ elif [[ "$CASE" == "reacteval" ]]; then
   echo '!!!!!!!!!!!!!! Building ReactEval '
   amrex_dir=${PWD}/PeleC/Submodules/AMReX
   amrex_hydro_dir=${PWD}/PeleC/Submodules/AMReX-Hydro
-  # pelephysics_dir=${PWD}/PelePhysics
-  pelephysics_dir=${PWD}/PeleC/Submodules/PelePhysics
+  pelephysics_dir=${PWD}/PelePhysics
+  # pelephysics_dir=${PWD}/PeleC/Submodules/PelePhysics
   cd PelePhysics/Testing/Exec/ReactEval/
   if [[ ! -z ${FRESH+x} ]]; then
     make \
