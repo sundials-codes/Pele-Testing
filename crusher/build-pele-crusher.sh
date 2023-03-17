@@ -60,8 +60,9 @@ fi
 
 # ---- Chemistry mechanism
 # chem=drm19
-# chem=dodecane_lu
 chem=dodecane_lu_qss
+# chem=dodecane_lu
+# chem=heptane_lu_88sk
 
 # ---- MAGMA install
 magma_enable=TRUE
@@ -104,7 +105,7 @@ if [[ ! -f $ginkgo_install/lib/libginkgo.so ]]; then
     -DCMAKE_BUILD_TYPE=RelWithDebInfo  -DAMDGPU_TARGETS=gfx90a \
     -DGINKGO_BUILD_HIP=ON -DGINKGO_BUILD_OMP=OFF -DGINKGO_BUILD_MPI=OFF \
     -DGINKGO_BUILD_BENCHMARKS=OFF -DGINKGO_BUILD_EXAMPLES=OFF -DGINKGO_BUILD_TESTS=OFF \
-    -DCMAKE_INSTALL_PREFIX=$ginkgo_install -DCMAKE_INSTALL_LIBDIR=lib
+    -DCMAKE_INSTALL_PREFIX=$ginkgo_install -DCMAKE_INSTALL_LIBDIR=lib -Dhiprand_DIR=/opt/rocm-5.4.0/lib/cmake/hiprand -Drocrand_DIR=/opt/rocm-5.4.0/lib/cmake/rocrand
   cd $ginkgo_source/builddir
   make -j$buildthreads VERBOSE=1 install
   cd -
@@ -130,7 +131,7 @@ if [[ ! -f $sundials_lib_dir/libsundials_cvode.so ]]; then
     -DENABLE_GINKGO=$ginkgo_enable -DGinkgo_DIR=$ginkgo_install -DSUNDIALS_GINKGO_BACKENDS="HIP" \
     -DSUNDIALS_INDEX_SIZE=32 -DSUNDIALS_BUILD_WITH_PROFILING=ON -DSUNDIALS_LOGGING_LEVEL=1 \
     -DCMAKE_INSTALL_PREFIX=$sundials_install -DEXAMPLES_INSTALL=OFF \
-    -DCMAKE_INSTALL_LIBDIR=lib
+    -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_CXX_FLAGS="-DGKO_SOLVE_SCALING"
   cd $sundials_source/builddir
   make -j$buildthreads VERBOSE=1 install
   cd -

@@ -7,8 +7,8 @@ module load cmake/3.23.2
 # module load PrgEnv-gnu            # use gnu compiler environment
 module load PrgEnv-amd              # use amd compiler environment
 module load craype-accel-amd-gfx90a # needed for GPU aware MPI
-module load rocm/5.1.0              # load rocm
-# module load rocm/5.4.0
+# module load rocm/5.1.0              # load rocm
+module load amd/5.4.0
 module load cray-libsci/21.08.1.2   # the default module as of 12/22/22 is cray-libsci/22.06.1.3 and it causes Fortran linking errors in MAGMA
 
 # ---- optional: faster builds
