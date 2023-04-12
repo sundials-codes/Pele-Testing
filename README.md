@@ -57,12 +57,31 @@ which are most relevant to time-integration and linear solvers are:
   SUNDIALS). Adding a linear solver requires implementing an interface to it in SUNDIALS. Contact
   [Cody Balos](mailto:balos1@llnl.gov) for more info. 
 
-### Getting the code and building it
+### Building and running
+
+**On Frontier**
+
+See [frontier/build-pele-frontier.sh](./frontier/build-pele-frontier.sh)
+See [frontier/run-reacteval.sh](./frontier/run-reacteval.sh)
 
 **On Crusher**
 
+See [crusher/build-pele-crusher.sh](./crusher/build-pele-crusher.sh)
+See [crusher/run-reacteval.sh](./crusher/run-reacteval.sh)
 
-**On Summit**
+### Verifying runs
+
+To verify a run for correctness, we first need to establish a baseline. Baseline runs should use the ReactEval inputs `cvode.solver_type = GMRES` and `chem_integator = ReactorCvode`. 
+We will use the [AMReX fcompare script](https://amrex-codes.github.io/amrex/docs_html/Faq.html?highlight=fcompare#frequently-asked-questions) to verify correctness.
+In order to use `fcompare` we will need to turn on plotting in the Pele runs. This is done by setting the ReactEval input `plotfile = /path/to/plot`. 
+For the baseline you should do `plotfile = /path/to/plotReference` then plot files will be created with the `plotReference` name as the prefix.
+For further runs you should change this filename to something else.
+You will also need to build `fcompare`, which requires a GNU compiler. On Crusher or Frontier, you can `module load gcc/12.2.0` navigate to the `PeleC/Submodules/AMReX/Tools/Plotfile/` and run `make`. 
+Then you can run `fcompare` like so:
+
+```
+fcompare pltReference00001 plt00001. 
+```
 
 ### Pre-tested setups for ReactEval
 
