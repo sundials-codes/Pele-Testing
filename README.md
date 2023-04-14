@@ -61,13 +61,15 @@ which are most relevant to time-integration and linear solvers are:
 
 **On Frontier**
 
-See [frontier/build-pele-frontier.sh](./frontier/build-pele-frontier.sh)
-See [frontier/run-reacteval.sh](./frontier/run-reacteval.sh)
+See [frontier/build-pele-frontier.sh](./frontier/build-pele-frontier.sh) for building.
+
+See [frontier/run-reacteval.sh](./frontier/run-reacteval.sh) for running.
 
 **On Crusher**
 
-See [crusher/build-pele-crusher.sh](./crusher/build-pele-crusher.sh)
-See [crusher/run-reacteval.sh](./crusher/run-reacteval.sh)
+See [crusher/build-pele-crusher.sh](./crusher/build-pele-crusher.sh) for building.
+
+See [crusher/run-reacteval.sh](./crusher/run-reacteval.sh) for running.
 
 ### Verifying runs
 

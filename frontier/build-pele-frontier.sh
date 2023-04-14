@@ -208,6 +208,9 @@ if [[ "$CASE" == "pelec" ]]; then
         GINKGO_DIR=${ginkgo_install} \
         DIM=3 \
         Chemistry_Model=${chem}
+
+  cp *.ex $EXEC_PATH
+  cp inputs.* $EXEC_PATH
 elif [[ "$CASE" == "pelelmex" ]]; then
   # -------- PeleLMeX
   echo '!!!!!!!!!!!!!! Building PeleLMeX NormalJet_OpenDomain '
@@ -254,6 +257,9 @@ elif [[ "$CASE" == "pelelmex" ]]; then
         GINKGO_DIR=${ginkgo_install} \
         DIM=3 \
         Chemistry_Model=${chem}
+
+  cp *.ex $EXEC_PATH
+  cp inputs.* $EXEC_PATH
 elif [[ "$CASE" == "reacteval" ]]; then
   # ------ Reacteval
   echo '!!!!!!!!!!!!!! Building ReactEval '
@@ -300,6 +306,9 @@ elif [[ "$CASE" == "reacteval" ]]; then
         PELE_ROLL_JAC=FALSE \
         DIM=3 \
         Chemistry_Model=${chem}
+
+  cp *.ex $EXEC_PATH
+  cp inputs.* $EXEC_PATH
 else
   echo "Unknown value for case: $CASE"
   echo "  options are: pelec, pelelmex, reacteval"

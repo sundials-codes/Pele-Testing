@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SOLVER="${SOLVER:=ginkgo_GMRES}" # GMRES, magma_direct, ginkgo_<GMRES|BICGSTAB>
-MAX_GRID_SIZE="${MAX_GRID_SIZE:=16}"
+SOLVER="${SOLVER:=magma_direct}" # GMRES, magma_direct, ginkgo_<GMRES|BICGSTAB>
+MAX_GRID_SIZE="${MAX_GRID_SIZE:=32}"
 INPUT_FROM_FILE="${INPUT_FROM_FILE:=0}"
 INIT_FILE="${INIT_FILE:=/path/}"
 SLURM_JOB_ID="${SLURM_JOB_ID:=0}"
@@ -13,12 +13,12 @@ set -e
 set -x
 
 # Move to the test directory
-cd PelePhysics/Testing/Exec/ReactEval
+cd $EXEC_PATH
 
 date
 # valgrind --tool=memcheck --leak-check=full --undef-value-errors=no \
-#srun -n 16 --cpus-per-task=7 --gpus-per-task=1 --gpu-bind=closest \
-srun -n 8 --cpus-per-task=7 --gpus-per-task=1 --gpu-bind=closest \
+# srun -n 16 --cpus-per-task=7 --gpus-per-task=1 --gpu-bind=closest \
+srun -n 1 --cpus-per-task=7 --gpus-per-task=1 --gpu-bind=closest \
 ./Pele3d.hip.x86-trento.TPROF.MPI.HIP.ex \
   inputs.3d-regt_GPU \
   chem_integrator=ReactorCvode \
@@ -30,18 +30,19 @@ srun -n 8 --cpus-per-task=7 --gpus-per-task=1 --gpu-bind=closest \
   amrex.the_arena_is_managed=0 \
   cvode.solve_type=$SOLVER \
   cvode.max_order=4 \
-  cvode.linear_solver_scaling=1 \
+  cvode.linear_solver_scaling=0 \
   ode.reactor_type=2 \
   ode.dt=1.e-5 \
-  ode.ndt=1 \
-  ode.rtol=1.0e-10 \
-  ode.atol=1.0e-12 \
-  ode.use_typ_vals=0 \
-  ode.verbose=2 | tee -a ReactEval.$SOLVER.$MAX_GRID_SIZE.$SLURM_JOB_ID.out
+  ode.ndt=10 \
+  ode.rtol=1.0e-6 \
+  ode.atol=1.0e-5 \
+  ode.use_typ_vals=1 \
+  ode.typ_vals= 2.60930515e-10 2.497699961e-09 1.55974666e-08 6.52952975e-08 2.047750538e-07 8.074737062e-08 1.208521506e-06 2.903492347e-09 4.477368314e-05 1.047535694e-06 1.122171621e-05 6.670332503e-07 4.831131292e-07 4.842634744e-08 8.675129173e-09 2.522642639e-07 1.811206266e-08 6.788374995e-10 1.169394584e-09 1.318410816e-10 1e-10 1e-10 1.492187367e-09 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 3.492130067e-10 1e-10 1e-10 1e-10 1e-10 0.0001372037486 2259.516367 \
+  ode.verbose=0 | tee -a ReactEval.$SOLVER.$MAX_GRID_SIZE.$SLURM_JOB_ID.out
 
 # # ---- when no typ_vals used
-#   ode.rtol=1.0e-6 \
-#   ode.atol=1.0e-10 \
+#   ode.rtol=1.0e-10 \
+#   ode.atol=1.0e-12 \
 #   ode.use_typ_vals=0 \
 
 # # ---- drm19 typ_vals (21 species) when initFromFile=0

@@ -1,5 +1,5 @@
 # please set your project account
-#export proj=CSC317
+export proj=csc317
 
 # ---- required modules
 module load cmake/3.23.2
@@ -28,3 +28,5 @@ export AMREX_AMD_ARCH=gfx90a
 export GINKGO_DIR=${PWD}/INSTALL
 export SUNDIALS_DIR=${PWD}/INSTALL
 export SUNDIALS_LIB_DIR=$SUNDIALS_DIR/lib
+export EXEC_PATH=/lustre/orion/$proj/proj-shared/Pele-sundials-frontier/ReactEval/bin
+export LD_LIBRARY_PATH=${PWD}/INSTALL/lib:${PWD}/INSTALL/lib64/${LD_LIBRARY_PATH}
