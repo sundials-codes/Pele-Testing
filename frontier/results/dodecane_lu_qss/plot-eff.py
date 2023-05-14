@@ -54,7 +54,6 @@ opts = { \
 # df.index = range(len(df))
 
 idat=0
-leg_solver=['ginkgo-GMRES', 'magma']
 
 for mech in mechanisms:
     df1 = collect_all_solver_data(solver[0], mech)
@@ -63,16 +62,18 @@ for mech in mechanisms:
 
     df = df1
     df['magma_direct'] = df2['avg']
+    df['magma-eff'] = 100* df['magma_direct'][0]/df['magma_direct']
+    df['gmres-eff'] = 100* df['ginkgo_GMRES'][0]/df['ginkgo_GMRES']
     print(df)
 
     fig, ax = plt.subplots()
 
-    plot_vars =  solver #list(map(lambda x: x + '-avg', solver))
+    plot_vars =  ['gmres-eff', 'magma-eff']#list(map(lambda x: x + '-avg', solver))
 
     cycler = plt.cycler(linestyle=opts['linetype'], color=opts['colorlist'], marker=opts['marklist'])
     ax.set_prop_cycle(cycler)
     df.plot(y = plot_vars,ax=ax,
-                   x = 'ntasks', xlabel="Num GCDs", ylabel="Total time(s)")
+                   x = 'ntasks', xlabel="Num GCDs", ylabel="Parallel efficiency")
     idat = idat +1
     plt.gcf().set_size_inches(width * factor, height * factor)
     plt.tight_layout()
@@ -80,9 +81,10 @@ for mech in mechanisms:
     # plt.setp(plt.gca().get_xticklabels(), rotation=70, ha='right', rotation_mode='anchor', fontsize=8)
     plt.xscale("log")
 
+    leg_solver=['ginkgo-GMRES', 'magma']
     plt.legend(leg_solver)
     plt.grid(True, linestyle='--', linewidth=0.3)
 
-    fname = 'pele_' + mech + '_frontier_weak_scaling.pdf'
+    fname = 'pele_' + mech + '_frontier_weak_scaling_eff.pdf'
 
     plt.savefig(fname, bbox_inches='tight')
