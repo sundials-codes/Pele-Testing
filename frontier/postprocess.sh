@@ -21,7 +21,8 @@ do
 			psize=$((64*64*64*$nt))
 			bsize=$((64*64*64)) 
 			out_time=$(awk '/^TinyProfiler/ {$1=""; print $0}' ReactEval.$s.64* | tr ' ' '\n' | perl -MScalar::Util -ne 'Scalar::Util::looks_like_number($_) && print' | tr '\n' ',')
-			echo "$psize,$bsize,$nt,$out_time" >> $fname
+			out_time_trim=$(${out_time:0:-1})
+			echo "$psize,$bsize,$nt,$out_time_trim" >> $fname
 		done
 	done
 	popd
