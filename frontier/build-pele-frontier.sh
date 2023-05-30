@@ -150,7 +150,7 @@ if [[ ! -d PelePhysics ]]; then
   #git clone --recursive https://github.com/AMReX-Combustion/PelePhysics.git
   git clone --recursive https://github.com/sundials-codes/PelePhysics.git
   cd PelePhysics
-  git checkout development
+  git checkout feature/gptune-parameters-ginkgo-updates
   cd -
 fi
 
