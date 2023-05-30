@@ -1,8 +1,9 @@
 #!/bin/bash
 
-SOLVER="${SOLVER:=magma_direct}" # GMRES, magma_direct, ginkgo_<GMRES|BICGSTAB>
-MAX_GRID_SIZE="${MAX_GRID_SIZE:=32}"
+SOLVER="${SOLVER:=ginkgo_GMRES}" # GMRES, magma_direct, ginkgo_<GMRES|BICGSTAB>
+MAX_GRID_SIZE="${MAX_GRID_SIZE:=64}"
 INPUT_FROM_FILE="${INPUT_FROM_FILE:=0}"
+SCALING="${SCALING:=1}" # 0 = none, 1 = setup scaling, 2 = solve scaling
 INIT_FILE="${INIT_FILE:=/path/}"
 SLURM_JOB_ID="${SLURM_JOB_ID:=0}"
 
@@ -17,9 +18,9 @@ cd $EXEC_PATH
 
 date
 # valgrind --tool=memcheck --leak-check=full --undef-value-errors=no \
-# srun -n 16 --cpus-per-task=7 --gpus-per-task=1 --gpu-bind=closest \
-srun -n 1 --cpus-per-task=7 --gpus-per-task=1 --gpu-bind=closest \
-./Pele3d.hip.x86-trento.TPROF.MPI.HIP.ex \
+# srun -n 1 --cpus-per-task=7 --gpus-per-task=1 --gpu-bind=closest \
+srun -n 2 --cpus-per-task=7 --gpus-per-task=1 --gpu-bind=closest \
+./Pele3d.hip.x86-trento.TPROF.MPI.HIP.ex.heptane_lu_88sk \
   inputs.3d-regt_GPU \
   chem_integrator=ReactorCvode \
   initFromFile=0 \
@@ -30,15 +31,15 @@ srun -n 1 --cpus-per-task=7 --gpus-per-task=1 --gpu-bind=closest \
   amrex.the_arena_is_managed=0 \
   cvode.solve_type=$SOLVER \
   cvode.max_order=4 \
-  cvode.linear_solver_scaling=0 \
+  cvode.linear_solver_scaling=$SCALING \
   ode.reactor_type=2 \
   ode.dt=1.e-5 \
-  ode.ndt=10 \
+  ode.ndt=1 \
   ode.rtol=1.0e-6 \
   ode.atol=1.0e-5 \
   ode.use_typ_vals=1 \
-  ode.typ_vals= 2.60930515e-10 2.497699961e-09 1.55974666e-08 6.52952975e-08 2.047750538e-07 8.074737062e-08 1.208521506e-06 2.903492347e-09 4.477368314e-05 1.047535694e-06 1.122171621e-05 6.670332503e-07 4.831131292e-07 4.842634744e-08 8.675129173e-09 2.522642639e-07 1.811206266e-08 6.788374995e-10 1.169394584e-09 1.318410816e-10 1e-10 1e-10 1.492187367e-09 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 3.492130067e-10 1e-10 1e-10 1e-10 1e-10 0.0001372037486 2259.516367 \
-  ode.verbose=0 | tee -a ReactEval.$SOLVER.$MAX_GRID_SIZE.$SLURM_JOB_ID.out
+ode.typ_vals= 7.27165946e-10 7.58044894e-08 6.120524396e-09 4.47556625e-05 2.214308438e-08 7.359964843e-07 3.971504515e-07 4.442275425e-09 3.016896333e-09 7.674393475e-07 1.121348327e-05 5.015279828e-08 1.882628991e-09 3.57410448e-07 4.361553463e-10 1.003599324e-08 1.326784937e-07 7.071454654e-10 3.30789621e-08 3.751288204e-10 2.175373937e-09 2.412600875e-09 1e-10 1e-10 1e-10 2.337837511e-10 5.374974987e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 2.604976721e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 0.0001371697768 2247.92073 \
+  ode.verbose=2 | tee -a ReactEval.$SOLVER.$SCALING.$MAX_GRID_SIZE.$SLURM_JOB_ID.out
 
 # # ---- when no typ_vals used
 #   ode.rtol=1.0e-10 \
@@ -67,7 +68,7 @@ srun -n 1 --cpus-per-task=7 --gpus-per-task=1 --gpu-bind=closest \
 #   ode.rtol=1.0e-6 \
 #   ode.atol=1.0e-5 \
 #   ode.use_typ_vals=1 \
-#   ode.typ_vals= 1e-10 2.57344504e-09 4.258772585e-08 8.243382858e-08 9.114702118e-08 4.192660352e-08 3.921464357e-07 1.036190345e-09 4.476125048e-05 2.353037648e-09 5.300147653e-10 8.033574255e-07 1.12162722e-05 4.358053812e-09 1.727714286e-07 4.431806343e-09 9.922461897e-08 1.421105552e-08 7.693490798e-10 1.439352801e-10 6.333243228e-08 1.851252408e-09 9.682363589e-09 1.314717914e-10 1.395158449e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 6.26229674e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 0.0001371697768 2227.881796  \
+# ode.typ_vals= 7.27165946e-10 7.58044894e-08 6.120524396e-09 4.47556625e-05 2.214308438e-08 7.359964843e-07 3.971504515e-07 4.442275425e-09 3.016896333e-09 7.674393475e-07 1.121348327e-05 5.015279828e-08 1.882628991e-09 3.57410448e-07 4.361553463e-10 1.003599324e-08 1.326784937e-07 7.071454654e-10 3.30789621e-08 3.751288204e-10 2.175373937e-09 2.412600875e-09 1e-10 1e-10 1e-10 2.337837511e-10 5.374974987e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 2.604976721e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 0.0001371697768 2247.92073 \
 
 
 date

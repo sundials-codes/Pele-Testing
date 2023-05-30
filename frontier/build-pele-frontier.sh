@@ -60,8 +60,8 @@ fi
 
 # ---- Chemistry mechanism
 # chem=drm19
-chem=dodecane_lu_qss
-# chem=dodecane_lu
+# chem=dodecane_lu_qss
+chem=dodecane_lu
 # chem=heptane_lu_88sk
 
 # ---- MAGMA install
@@ -96,7 +96,8 @@ ginkgo_install=$GINKGO_DIR
 if [[ ! -d $ginkgo_source ]]; then
   git clone https://github.com/ginkgo-project/ginkgo
   cd ginkgo
-  git checkout batch-develop
+  # git checkout batch-develop
+  git checkout batch-minor-updates
   cd -
 fi
 if [[ ! -f $ginkgo_install/lib/libginkgo.so ]]; then
@@ -210,16 +211,17 @@ if [[ "$CASE" == "pelec" ]]; then
         Chemistry_Model=${chem}
 
   cp *.ex $EXEC_PATH
-  cp inputs.* $EXEC_PATH
+  cp input.* $EXEC_PATH
 elif [[ "$CASE" == "pelelmex" ]]; then
   # -------- PeleLMeX
-  echo '!!!!!!!!!!!!!! Building PeleLMeX NormalJet_OpenDomain '
+  echo '!!!!!!!!!!!!!! Building PeleLMeX '
   # ---- PelePhysics and AMReX install
   amrex_dir=${PWD}/PeleLMeX/Submodules/amrex
   amrex_hydro_dir=${PWD}/PeleLMeX/Submodules/AMReX-Hydro
-  # pelephysics_dir=${PWD}/PelePhysics
-  pelephysics_dir=${PWD}/PeleLMeX/Submodules/PelePhysics
-  cd PeleLMeX/Exec/Cases/NormalJet_OpenDomain
+  pelephysics_dir=${PWD}/PelePhysics
+  # pelephysics_dir=${PWD}/PeleLMeX/Submodules/PelePhysics
+  cd PeleLMeX/Exec/Cases/ChallengeProblem
+  # cd PeleLMeX/Exec/Cases/NormalJet_OpenDomain
   # cd PeleLMeX/Exec/RegTests/FlameSheet
   if [[ ! -z ${FRESH+x} ]]; then
     make \
